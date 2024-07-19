@@ -1,0 +1,59 @@
+.circle-item-1,
+.circle-item-2,
+.circle-item-3,
+.circle-item-4 {
+    offset-path: circle(50% at 50% 50%);
+    transform: rotate(0deg); /* Prevent rotation */
+}
+
+.circle-item-1 {
+    animation: moveAlongCircumference1 10s linear infinite;
+}
+
+.circle-item-2 {
+    animation: moveAlongCircumference2 10s linear infinite;
+}
+
+.circle-item-3 {
+    animation: moveAlongCircumference3 10s linear infinite;
+}
+
+.circle-item-4 {
+    animation: moveAlongCircumference4 10s linear infinite;
+}
+
+@keyframes moveAlongCircumference1 {
+    from {
+        offset-distance: 0%;
+    }
+    to {
+        offset-distance: 100%;
+    }
+}
+
+@keyframes moveAlongCircumference2 {
+    from {
+        offset-distance: 50%;
+    }
+    to {
+        offset-distance: 150%;
+    }
+}
+
+@keyframes moveAlongCircumference3 {
+    from {
+        offset-distance: 25%;
+    }
+    to {
+        offset-distance: 125%;
+    }
+}
+
+@keyframes moveAlongCircumference4 {
+    from {
+        offset-distance: 75%;
+    }
+    to {
+        offset-distance: -25%;
+    }
+}
